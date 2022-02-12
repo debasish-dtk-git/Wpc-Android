@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act_histoy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e9e9e9"
+    tools:context=".activity.HistorydtlsActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="top|center">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/statusbar"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/backbutton_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:scaleType="fitXY"
+                    android:padding="10dp"
+                    android:layout_marginTop="17dp"
+                    android:src="@drawable/back_white" />
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/backmedcn">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image8"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/no_image"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"/>
+
+                    <ImageView
+                        android:id="@+id/captureimage_profile8"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginStart="100dp"
+                        android:src="@drawable/camera"/>
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/imageview_logo_profile8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:padding="10dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_gravity="right"/>
+
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="top|center"
+                android:layout_marginTop="-25dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="top"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/profile_shape">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nationality &amp; Immigration History"
+                        android:textColor="#970842"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:gravity="left"
+                        android:drawableLeft="@drawable/personal_icon"
+                        android:drawableTint="#970842"
+                        android:drawablePadding="10dp"/>
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="#a9a9a9"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="National ID No."
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:id="@+id/edittext_employee_nati_Id_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="National ID No."
+                            android:textColorHint="#626060"
+                            android:gravity="left|center"
+                            android:background="@null"
+                            android:textSize="16dp"
+                            android:textColor="#626060"
+                            android:maxLines="1"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Place of Issue"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:id="@+id/edittext_employee_plce_issue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Place of Issue"
+                            android:textColorHint="#626060"
+                            android:gravity="left|center"
+                            android:background="@null"
+                            android:textSize="16dp"
+                            android:textColor="#626060"
+                            android:maxLines="1"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Issue Date"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/textview_employee_issue_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Issue Date"
+                            android:textColorHint="#626060"
+                            android:background="@drawable/round_shape"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:drawableRight="@drawable/calander_icon"
+                            android:drawableTint="#970842"
+                            android:drawablePadding="10dp"
+                            android:textSize="16dp"/>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Expiry Date"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/textview_employee_exp_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Expiry Date"
+                            android:textColorHint="#626060"
+                            android:background="@drawable/round_shape"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:drawableRight="@drawable/calander_icon"
+                            android:drawableTint="#970842"
+                            android:drawablePadding="10dp"
+                            android:textSize="16dp"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Nationality"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <Spinner
+                            android:id="@+id/spinner_employee__nation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/spinner_border"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Country of Birth"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <Spinner
+                            android:id="@+id/spinner_employee__contyofbirth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/spinner_border"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Type of Documents"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:id="@+id/edittext_employee_type_of_doc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Type of Documents"
+                            android:textColorHint="#626060"
+                            android:gravity="left|center"
+                            android:background="@null"
+                            android:textSize="16dp"
+                            android:textColor="#626060"
+                            android:maxLines="1"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_immigration_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:background="@drawable/button_doc_shape"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uplaod Documents"
+                            android:textColor="#ffffff"
+                            android:textStyle="normal"
+                            android:textSize="12dp"
+                            android:gravity="center" />
+
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="fitXY"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/camera_doc"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Passport Details"
+                        android:textColor="#970842"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:gravity="left"
+                        android:layout_marginTop="20dp"
+                        android:drawableLeft="@drawable/personal_icon"
+                        android:drawableTint="#970842"
+                        android:drawablePadding="10dp"/>
+
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="#a9a9a9"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Passport No."
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:id="@+id/edittext_employee_passprt_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Passport No."
+                            android:textColorHint="#626060"
+                            android:gravity="left|center"
+                            android:background="@null"
+                            android:textSize="16dp"
+                            android:textColor="#626060"
+                            android:maxLines="1"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Nationality"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <Spinner
+                            android:id="@+id/spinner_employee__nation_passport"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/spinner_border"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Place of Birth"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:id="@+id/edittext_employee_placeofbirth_passpt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Place of Birth"
+                            android:textColorHint="#626060"
+                            android:gravity="left|center"
+                            android:background="@null"
+                            android:textSize="16dp"
+                            android:textColor="#626060"
+                            android:maxLines="1"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Issued By"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:id="@+id/edittext_employee_issud_by_passpt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Issued By"
+                            android:textColorHint="#626060"
+                            android:gravity="left|center"
+                            android:background="@null"
+                            android:textSize="16dp"
+                            android:textColor="#626060"
+                            android:maxLines="1"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Issue Date"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+
+                    <TextView
+                        android:id="@+id/textview_employee_issue_date_passpt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Issue Date"
+                        android:textColorHint="#626060"
+                        android:background="@drawable/round_shape"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:drawableRight="@drawable/calander_icon"
+                        android:drawableTint="#970842"
+                        android:drawablePadding="10dp"
+                        android:textSize="16dp"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Expiry Date"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/textview_employee_exp_date_passpt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Expiry Date"
+                        android:textColorHint="#626060"
+                        android:background="@drawable/round_shape"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:drawableRight="@drawable/calander_icon"
+                        android:drawableTint="#970842"
+                        android:drawablePadding="10dp"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Eligible Review Date"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/textview_employee_review_date_passpt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Eligible Review Date"
+                        android:textColorHint="#626060"
+                        android:background="@drawable/round_shape"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:drawableRight="@drawable/calander_icon"
+                        android:drawableTint="#970842"
+                        android:drawablePadding="10dp"
+                        android:textSize="16dp"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Eligible Status"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <Spinner
+                            android:id="@+id/spinner_employee__eligble_status_passpt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/spinner_border"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_uploaddoc_paspt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:background="@drawable/button_doc_shape"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uplaod Documents"
+                            android:textColor="#ffffff"
+                            android:textStyle="normal"
+                            android:textSize="12dp"
+                            android:gravity="center" />
+
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="fitXY"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/camera_doc"/>
+
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Is this your current passport?"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <Spinner
+                            android:id="@+id/spinner_employee_current_passpt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/spinner_border"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Remarks"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:id="@+id/edittext_employee_remarks_passpt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Remarks"
+                            android:gravity="left|center"
+                            android:background="@null"
+                            android:textSize="16dp"
+                            android:textColor="#626060"
+                            android:maxLines="1"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Visa"
+                        android:textColor="#970842"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:gravity="left"
+                        android:layout_marginTop="20dp"
+                        android:drawableLeft="@drawable/personal_icon"
+                        android:drawableTint="#970842"
+                        android:drawablePadding="10dp"/>
+
+                    <View
+                        android:id="@+id/line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="#a9a9a9"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="BRP No."
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:id="@+id/edittext_employee_brp_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="BRP No."
+                            android:textColorHint="#626060"
+                            android:gravity="left|center"
+                            android:background="@null"
+                            android:textSize="16dp"
+                            android:textColor="#626060"
+                            android:maxLines="1"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Nationality"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <Spinner
+                            android:id="@+id/spinner_employee__nation_visa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/spinner_border"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Country of Residence"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <Spinner
+                            android:id="@+id/spinner_employee__contyresidence_visa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/spinner_border"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Issued by"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:id="@+id/edittext_employee_issud_by_visa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Issued by"
+                            android:textColorHint="#626060"
+                            android:gravity="left|center"
+                            android:background="@null"
+                            android:textSize="16dp"
+                            android:textColor="#626060"
+                            android:maxLines="1"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Issue Date"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+
+                    <TextView
+                        android:id="@+id/textview_employee_issue_date_visa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Issue Date"
+                        android:textColor="#626060"
+                        android:background="@drawable/round_shape"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:drawableRight="@drawable/calander_icon"
+                        android:drawableTint="#970842"
+                        android:drawablePadding="10dp"
+                        android:textSize="16dp"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Expiry Date"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/textview_employee_exp_date_visa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Expiry Date"
+                        android:textColor="#626060"
+                        android:background="@drawable/round_shape"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:drawableRight="@drawable/calander_icon"
+                        android:drawableTint="#970842"
+                        android:drawablePadding="10dp"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Eligible Review Date"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/textview_employee_review_date_visa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Eligible Review Date"
+                        android:textColor="#626060"
+                        android:background="@drawable/round_shape"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:drawableRight="@drawable/calander_icon"
+                        android:drawableTint="#970842"
+                        android:drawablePadding="10dp"
+                        android:textSize="16dp"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Eligible Status"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <Spinner
+                            android:id="@+id/spinner_employee__eligble_status_visa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/spinner_border"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_uploaddoc_visa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:background="@drawable/button_doc_shape"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uplaod Documents"
+                            android:textColor="#ffffff"
+                            android:textStyle="normal"
+                            android:textSize="12dp"
+                            android:gravity="center" />
+
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="fitXY"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/camera_doc"/>
+
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Is this your current Visa?"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="5dp">
+
+                        <Spinner
+                            android:id="@+id/spinner_employee_current_visa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/spinner_border"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Remarks"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/edittext_employee_remarks_visa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Remarks"
+                            android:textColorHint="#626060"
+                            android:gravity="left|center"
+                            android:background="@null"
+                            android:textSize="16dp"
+                            android:textColor="#626060"
+                            android:maxLines="1"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"/>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <Button
+                        android:id="@+id/next8button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:padding="10dp"
+                        android:text="NEXT"
+                        android:textSize="19dp"
+                        android:textColor="#ffffff"
+                        android:gravity="center"
+                        android:background="@drawable/button_profile_shape"/>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

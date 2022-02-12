@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center">
+
+          <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:background="@drawable/round_shape"
+                       android:layout_marginTop="20dp">
+
+                       <EditText
+                           android:id="@+id/edittext_employee_jobtitle_tr"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="text"
+                           android:hint="Job Title"
+                           android:textColorHint="#626060"
+                           android:gravity="left|center"
+                           android:background="@null"
+                           android:textSize="16dp"
+                           android:textColor="#626060"
+                           android:maxLines="1"
+                           android:paddingLeft="15dp"
+                           android:paddingRight="10dp"
+                           android:paddingTop="10dp"
+                           android:paddingBottom="10dp"/>
+
+                   </LinearLayout>
+
+                   <TextView
+                       android:id="@+id/textview_employee_startdate_tr"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="left"
+                       android:text="Start Date"
+                       android:background="@drawable/round_shape"
+                       android:paddingLeft="15dp"
+                       android:paddingRight="10dp"
+                       android:paddingTop="10dp"
+                       android:paddingBottom="10dp"
+                       android:layout_marginTop="10dp"
+                       android:drawableRight="@drawable/calander_icon"
+                       android:drawableTint="#970842"
+                       android:drawablePadding="10dp"
+                       android:textSize="16dp"
+                       android:textColor="#626060"/>
+
+                   <TextView
+                       android:id="@+id/textview_employee_enddate_tr"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="left"
+                       android:text="End Date"
+                       android:background="@drawable/round_shape"
+                       android:paddingLeft="15dp"
+                       android:paddingRight="10dp"
+                       android:paddingTop="10dp"
+                       android:paddingBottom="10dp"
+                       android:layout_marginTop="10dp"
+                       android:drawableRight="@drawable/calander_icon"
+                       android:drawableTint="#970842"
+                       android:drawablePadding="10dp"
+                       android:textSize="16dp"
+                       android:textColor="#626060"/>
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:background="@drawable/round_shape"
+                       android:layout_marginTop="10dp">
+
+                       <EditText
+                           android:id="@+id/edittext_employee_jobdesc_tr"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="text"
+                           android:hint="Job Description"
+                           android:textColorHint="#626060"
+                           android:gravity="left|center"
+                           android:background="@null"
+                           android:textSize="16dp"
+                           android:textColor="#626060"
+                           android:maxLines="1"
+                           android:paddingLeft="15dp"
+                           android:paddingRight="10dp"
+                           android:paddingTop="10dp"
+                           android:paddingBottom="10dp"/>
+
+                   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+
+        <Button
+            android:id="@+id/button_add_train"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_button_shape"
+            android:text="+"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:layout_marginRight="20dp"
+            android:onClick="onAddField"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/button_remove_train"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/remove_button_shape"
+            android:text="-"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

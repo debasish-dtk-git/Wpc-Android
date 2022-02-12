@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center">
+
+                <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:background="@drawable/round_shape"
+                       android:layout_marginTop="20dp">
+
+                       <EditText
+                           android:id="@+id/edittext_qu_edu"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="text"
+                           android:hint="Qualification"
+                           android:textColorHint="#626060"
+                           android:gravity="left|center"
+                           android:background="@null"
+                           android:textSize="16dp"
+                           android:textColor="#626060"
+                           android:maxLines="1"
+                           android:paddingLeft="15dp"
+                           android:paddingRight="10dp"
+                           android:paddingTop="10dp"
+                           android:paddingBottom="10dp"/>
+
+                   </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/edittext__sub_edu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Subject"
+                            android:textColorHint="#626060"
+                            android:gravity="left|center"
+                            android:background="@null"
+                            android:textSize="16dp"
+                            android:textColor="#626060"
+                            android:maxLines="1"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/edittext__insname_edu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Institution Name"
+                            android:textColorHint="#626060"
+                            android:gravity="left|center"
+                            android:background="@null"
+                            android:textSize="16dp"
+                            android:textColor="#626060"
+                            android:maxLines="1"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:background="@drawable/round_shape"
+                       android:layout_marginTop="10dp">
+
+                       <EditText
+                           android:id="@+id/edittext_board_edu"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="text"
+                           android:hint="Awarding Body / University"
+                           android:textColorHint="#626060"
+                           android:gravity="left|center"
+                           android:background="@null"
+                           android:textSize="16dp"
+                           android:textColor="#626060"
+                           android:maxLines="1"
+                           android:paddingLeft="15dp"
+                           android:paddingRight="10dp"
+                           android:paddingTop="10dp"
+                           android:paddingBottom="10dp"/>
+
+                   </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/round_shape"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/edittext_year_edu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Year of Passing"
+                            android:textColorHint="#626060"
+                            android:gravity="left|center"
+                            android:background="@null"
+                            android:textSize="16dp"
+                            android:textColor="#626060"
+                            android:maxLines="1"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_shape"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/edittext_persentage_edu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="Percentage"
+                        android:textColorHint="#626060"
+                        android:gravity="left|center"
+                        android:background="@null"
+                        android:textSize="16dp"
+                        android:textColor="#626060"
+                        android:maxLines="1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_shape"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/edittext_grade_edu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="Grade / Division"
+                        android:textColorHint="#626060"
+                        android:gravity="left|center"
+                        android:background="@null"
+                        android:textSize="16dp"
+                        android:textColor="#626060"
+                        android:maxLines="1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lin_doc_edu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:background="@drawable/button_doc_shape"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Transcript Document"
+                        android:textColor="#ffffff"
+                        android:textStyle="normal"
+                        android:textSize="12dp"
+                        android:gravity="center" />
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/camera_doc"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_doc_edu2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:background="@drawable/button_doc_shape"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Certificate Document"
+                        android:textColor="#ffffff"
+                        android:textStyle="normal"
+                        android:textSize="12dp"
+                        android:gravity="center" />
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/camera_doc"/>
+
+
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="50dp">
+
+
+                        <Button
+                            android:id="@+id/button_add_edu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/add_button_shape"
+                            android:text="+"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:padding="15dp"
+                            android:layout_marginRight="20dp"
+                            android:onClick="onAddFieldEdu"
+                            android:textColor="@android:color/white"/>
+
+                        <Button
+                            android:id="@+id/button_remove_edu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/remove_button_shape"
+                            android:text="-"
+                            android:padding="15dp"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+
+</LinearLayout>

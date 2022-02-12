@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".activity.OrganisationActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:paddingBottom="30dp"
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/statusbar">
+
+                <ImageView
+                    android:id="@+id/imageview_menu_org"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/menu_icon"
+                    android:scaleType="fitXY"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_gravity="left|center"/>
+
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="20dp">
+
+                    <DigitalClock
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"/>
+
+                    <TextView
+                        android:id="@+id/timeUpdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/text_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="Your Virtual HR Manager"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:layout_gravity="bottom|center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/imageview_notification"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="14dp"
+                    android:src="@drawable/bell_noti_icon"
+                    android:layout_gravity="right|center"/>
+
+                <TextView
+                    android:id="@+id/cart_badge_dashboard"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/badge_background"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone"
+                    android:textSize="10sp" />
+
+
+            </FrameLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="top|center"
+                android:padding="10dp">
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/lin_org_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/organisation_screen_item_height"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_square0">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:drawableLeft="@drawable/org_pro_smaller"
+                            android:drawablePadding="@dimen/organisation_screen_left_icon_padding"
+                            android:text="Organisation Profile"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="#ffffff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin__active_employees"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/organisation_screen_item_height"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_square1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:drawableLeft="@drawable/empno_smaller"
+                            android:drawablePadding="@dimen/organisation_screen_left_icon_padding"
+                            android:text="Number of Active Employees"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="#ffffff" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight=".5">
+
+                        <TextView
+                            android:id="@+id/textview_active_employees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="#026531"
+                            android:background="@drawable/rounded_white_textview"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin__migrant_employees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_square2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="2">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:drawableLeft="@drawable/empno_smaller"
+                            android:drawablePadding="@dimen/organisation_screen_left_icon_padding"
+                            android:text="Number of Migrant Employees"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="#ffffff" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight=".5">
+
+                        <TextView
+                            android:id="@+id/textview_migrant_employees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="#267be6"
+                            android:background="@drawable/rounded_white_textview"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+               <LinearLayout
+                    android:id="@+id/lin_right_to_work_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_square1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:drawableLeft="@drawable/empno_smaller"
+                            android:drawablePadding="@dimen/organisation_screen_left_icon_padding"
+                            android:text="Right to Work Check"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="#ffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_change_of_circumstances"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_square4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:drawableLeft="@drawable/changeofcircums_smaller"
+                        android:drawablePadding="@dimen/organisation_screen_left_icon_padding"
+                        android:text="Change of Circumstances"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="#ffffff" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lin_monitoring_reporting"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/organisation_screen_item_height"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_square1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:drawableLeft="@drawable/empno_smaller"
+                        android:drawablePadding="@dimen/organisation_screen_left_icon_padding"
+                        android:text="Monitoring &amp; Reporting"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="#ffffff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:id="@+id/lin_sponsor_management_dossier"
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/organisation_screen_item_height"
+                     android:orientation="vertical"
+                     android:gravity="center"
+                     android:padding="10dp"
+                     android:layout_marginBottom="10dp"
+                     android:background="@drawable/background_square4">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="left|center"
+                         android:drawableLeft="@drawable/empno_smaller"
+                         android:drawablePadding="@dimen/organisation_screen_left_icon_padding"
+                         android:text="Sponsor Management Dossier"
+                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                         android:textColor="#ffffff" />
+
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/lin_key_contact"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:gravity="center"
+                     android:visibility="gone"
+                     android:padding="10dp"
+                     android:layout_marginBottom="10dp"
+                     android:background="@drawable/background_square4">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="left|center"
+                         android:drawableLeft="@drawable/empno_smaller"
+                         android:drawablePadding="@dimen/organisation_screen_left_icon_padding"
+                         android:text="Key Contact"
+                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                         android:textColor="#ffffff" />
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/lin_contract_agreement"
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/organisation_screen_item_height"
+                     android:orientation="vertical"
+                     android:gravity="center"
+                     android:padding="10dp"
+                     android:layout_marginBottom="10dp"
+                     android:background="@drawable/background_square1">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="left|center"
+                         android:drawableLeft="@drawable/conagrement_smaller"
+                         android:drawablePadding="@dimen/organisation_screen_left_icon_padding"
+                         android:text="Contract Agreement"
+                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                         android:textColor="#ffffff" />
+
+
+                 </LinearLayout>
+<!--
+                <LinearLayout
+                    android:id="@+id/lin_monitoring_reporting"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/organisation_screen_item_height"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="@drawable/background_square4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:drawableLeft="@drawable/empno_smaller"
+                        android:drawablePadding="5dp"
+                        android:text="Monitoring &amp; Reporting"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="#ffffff" />
+
+                </LinearLayout>
+-->
+               <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="top">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="8dp"
+                        android:text="Monitoring &amp; Reporting"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+
+                    <LinearLayout
+                        android:id="@+id/lin__monitoring_reporting"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_square3"
+                        android:visibility="visible"
+                        android:gravity="center">
+
+                        <TextView
+                            android:text="Employee ID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/textView5"
+                            android:gravity="center"
+                            android:paddingTop="13dp"
+                            android:paddingBottom="13dp"
+                            android:textColor="@android:color/white"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                        <TextView
+                            android:text="Employee Name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/textView3"
+                            android:gravity="left|center"
+                            android:paddingTop="13dp"
+                            android:paddingBottom="13dp"
+                            android:textColor="@android:color/white"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+                        <TextView
+                            android:text="DOB"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/textView4"
+                            android:gravity="center"
+                            android:paddingTop="13dp"
+                            android:paddingBottom="13dp"
+                            android:textColor="@android:color/white"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <ExpandableListView
+                        android:id="@+id/listview_monitoring_reporting"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@android:color/transparent"
+                        android:groupIndicator="@null"
+                        android:dividerHeight="0dp"
+                        android:layout_marginTop="5dp"/>
+
+
+
+
+
+                </LinearLayout>-->
+
+
+
+   </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+        <include
+            android:id="@+id/slide_menu_list_org"
+            android:visibility="invisible"
+            layout="@layout/libraryslide_org" />
+    </FrameLayout>
+
+
+</LinearLayout>

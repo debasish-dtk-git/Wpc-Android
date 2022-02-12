@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/post_card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:gravity="left">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+         <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="left"
+                android:layout_weight=".6">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/imageview_noti_emp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center" />
+
+                    <ProgressBar
+                        android:id="@+id/homeprogress_noti_emp"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:indeterminateTint="#D81B60"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"/>
+
+                </FrameLayout>
+         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/textview_noti_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingBottom="3dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:gravity="left|center"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/textview_noti_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:paddingLeft="10dp"
+                android:textColor="#9c9b9b"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:gravity="left|center" />
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="top|center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textview_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="6dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#9c9b9b"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/vertical_dots"/>
+
+            </LinearLayout>
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#969494"
+                android:layout_marginLeft="65dp"/>
+
+
+        </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+

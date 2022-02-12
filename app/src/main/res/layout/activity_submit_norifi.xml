@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_noti_submit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e1dede"
+    tools:context=".activity.SubmitNorifiActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/statusbar">
+
+        <ImageView
+            android:id="@+id/imageview_notisubmit_org_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_white"
+            android:scaleType="fitXY"
+            android:padding="10dp"
+            android:layout_gravity="left|center"/>
+
+
+
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message Centre"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/background_message_cen_shape">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="6dp"
+                    android:src="@drawable/employee_icccon"/>
+
+
+
+         <Spinner
+            android:id="@+id/mySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:background="@drawable/spinner_border2"
+            android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="15dp"
+                android:background="#969494"/>
+
+
+
+       <EditText
+           android:id="@+id/edittext_sub_org"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@android:color/transparent"
+           android:inputType="textImeMultiLine"
+           android:maxLines="1"
+           android:paddingLeft="22dp"
+           android:paddingRight="10dp"
+           android:paddingTop="10dp"
+           android:paddingBottom="10dp"
+           android:drawablePadding="10dp"
+           android:hint="Subject"
+           android:textColorHint="#969494"
+           android:drawableLeft="@drawable/subject_smaller"
+           android:textColor="#444343"
+           android:ems="10"
+           android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="15dp"
+                android:background="#969494"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:gravity="top|center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/email_gray"/>
+
+
+        <EditText
+            android:id="@+id/edittext_desc_org"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:inputType="textMultiLine"
+            android:background="@android:color/transparent"
+            android:gravity="left|top"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:hint="Message"
+            android:textColorHint="#969494"
+            android:textColor="#444343"
+            android:ems="10"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+       </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="15dp"
+                android:background="#969494"/>
+
+        <Button
+            android:id="@+id/button_org_message_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/button_shape2"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/white"
+            android:text="Submit" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

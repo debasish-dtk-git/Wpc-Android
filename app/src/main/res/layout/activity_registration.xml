@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act_regi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:gravity="center"
+    tools:context=".activity.RegistrationActivity">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="24dp"
+                        android:textColor="#970842"
+                        android:gravity="center"
+                        android:paddingTop="30dp"
+                        android:paddingBottom="15dp"
+                        android:text="REGISTER NOW"/>
+
+
+                  <!--  <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/logo"/>-->
+
+
+                </LinearLayout>
+               <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="top|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="left"
+                       android:text="Company Name"
+                       android:paddingLeft="15dp"
+                       android:layout_marginTop="20dp"
+                       android:textSize="16dp"
+                       android:textColor="#626060"/>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:background="@drawable/profile_shape"
+                       android:layout_marginTop="5dp">
+
+                       <EditText
+                           android:id="@+id/edittext_emp_comname"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="textPersonName"
+                           android:hint="Enter Company Name"
+                           android:gravity="left|center"
+                           android:background="@null"
+                           android:textSize="16dp"
+                           android:textColor="#626060"
+                           android:maxLines="1"
+                           android:paddingLeft="15dp"
+                           android:paddingRight="10dp"
+                           android:paddingTop="10dp"
+                           android:paddingBottom="10dp"
+                           android:drawableLeft="@drawable/building_smaller"
+                           android:drawablePadding="10dp"/>
+
+                   </LinearLayout>
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="left"
+                       android:text="First Name"
+                       android:paddingLeft="15dp"
+                       android:layout_marginTop="15dp"
+                       android:textSize="16dp"
+                       android:textColor="#626060"/>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:background="@drawable/profile_shape"
+                       android:layout_marginTop="5dp">
+
+                       <EditText
+                           android:id="@+id/edittext_emp_fname"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="textPersonName"
+                           android:hint="Enter First Name"
+                           android:gravity="left|center"
+                           android:background="@null"
+                           android:textSize="16dp"
+                           android:textColor="#626060"
+                           android:maxLines="1"
+                           android:paddingLeft="15dp"
+                           android:paddingRight="10dp"
+                           android:paddingTop="10dp"
+                           android:paddingBottom="10dp"
+                           android:drawableLeft="@drawable/personal_icon"
+                           android:drawableTint="#626060"
+                           android:drawablePadding="10dp"/>
+
+                   </LinearLayout>
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="left"
+                       android:text="Last Name"
+                       android:paddingLeft="15dp"
+                       android:layout_marginTop="15dp"
+                       android:textSize="16dp"
+                       android:textColor="#626060"/>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:background="@drawable/profile_shape"
+                       android:layout_marginTop="5dp">
+
+                       <EditText
+                           android:id="@+id/edittext_emp_lname"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="textPersonName"
+                           android:hint="Enter Last Name"
+                           android:gravity="left|center"
+                           android:background="@null"
+                           android:textSize="16dp"
+                           android:textColor="#626060"
+                           android:maxLines="1"
+                           android:paddingLeft="15dp"
+                           android:paddingRight="10dp"
+                           android:paddingTop="10dp"
+                           android:paddingBottom="10dp"
+                           android:drawableLeft="@drawable/personal_icon"
+                           android:drawableTint="#626060"
+                           android:drawablePadding="10dp"/>
+
+                   </LinearLayout>
+
+
+                 <!--  <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="left"
+                       android:text="Designation"
+                       android:paddingLeft="15dp"
+                       android:layout_marginTop="15dp"
+                       android:textSize="16dp"
+                       android:textColor="#626060"/>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:background="@drawable/round_shape_reg"
+                       android:layout_marginTop="5dp">
+
+                       <EditText
+                           android:id="@+id/edittext_emp_desig"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="text"
+                           android:hint="Enter Designation"
+                           android:gravity="left|center"
+                           android:background="@null"
+                           android:textSize="16dp"
+                           android:textColor="#626060"
+                           android:maxLines="1"
+                           android:paddingLeft="15dp"
+                           android:paddingRight="10dp"
+                           android:paddingTop="10dp"
+                           android:paddingBottom="10dp"
+                           android:drawableLeft="@drawable/personal_icon"
+                           android:textCursorDrawable="@drawable/color_cursor1"
+                           android:drawableTint="#626060"
+                           android:drawablePadding="10dp"/>
+
+                   </LinearLayout>
+-->
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="left"
+                       android:text="Email"
+                       android:paddingLeft="15dp"
+                       android:layout_marginTop="15dp"
+                       android:textSize="16dp"
+                       android:textColor="#626060"/>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:background="@drawable/profile_shape"
+                       android:layout_marginTop="5dp">
+
+                       <EditText
+                           android:id="@+id/edittext_emp_email"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="textEmailAddress"
+                           android:hint="Enter Email"
+                           android:gravity="left|center"
+                           android:background="@null"
+                           android:textSize="16dp"
+                           android:textColor="#626060"
+                           android:maxLines="1"
+                           android:paddingLeft="15dp"
+                           android:paddingRight="10dp"
+                           android:paddingTop="10dp"
+                           android:paddingBottom="10dp"
+                           android:drawableLeft="@drawable/mail_smaller"
+                           android:drawableTint="#626060"
+                           android:drawablePadding="10dp"/>
+
+                   </LinearLayout>
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="left"
+                       android:text="Your Contact Number"
+                       android:paddingLeft="15dp"
+                       android:layout_marginTop="15dp"
+                       android:textSize="16dp"
+                       android:textColor="#626060"/>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:background="@drawable/profile_shape"
+                       android:layout_marginTop="5dp">
+
+                       <EditText
+                           android:id="@+id/edittext_emp_phone_no"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="phone"
+                           android:hint="Enter Your Contact Number"
+                           android:gravity="left|center"
+                           android:background="@null"
+                           android:textSize="16dp"
+                           android:textColor="#626060"
+                           android:maxLines="1"
+                           android:paddingLeft="15dp"
+                           android:paddingRight="10dp"
+                           android:paddingTop="10dp"
+                           android:paddingBottom="10dp"
+                           android:drawableLeft="@drawable/phone_smaller"
+                           android:drawableTint="#626060"
+                           android:drawablePadding="10dp"/>
+
+                   </LinearLayout>
+
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="left"
+                       android:text="Create New Password"
+                       android:paddingLeft="15dp"
+                       android:layout_marginTop="15dp"
+                       android:textSize="16dp"
+                       android:textColor="#626060"/>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:background="@drawable/profile_shape"
+                       android:layout_marginTop="5dp">
+
+                       <EditText
+                           android:id="@+id/edittext_emp_pass"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="textPassword"
+                           android:hint="Enter New Password"
+                           android:gravity="left|center"
+                           android:background="@null"
+                           android:textSize="16dp"
+                           android:textColor="#626060"
+                           android:maxLines="1"
+                           android:paddingLeft="15dp"
+                           android:paddingRight="10dp"
+                           android:paddingTop="10dp"
+                           android:paddingBottom="10dp"
+                           android:drawableLeft="@drawable/password_icon"
+                           android:drawableTint="#626060"
+                           android:drawablePadding="10dp"/>
+
+                   </LinearLayout>
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="left"
+                       android:text="Confirm New Password"
+                       android:paddingLeft="15dp"
+                       android:layout_marginTop="15dp"
+                       android:textSize="16dp"
+                       android:textColor="#626060"/>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:background="@drawable/profile_shape"
+                       android:layout_marginTop="5dp">
+
+                       <EditText
+                           android:id="@+id/edittext_emp_conpass"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="textPassword"
+                           android:hint="Enter Confirm Password"
+                           android:gravity="left|center"
+                           android:background="@null"
+                           android:textSize="16dp"
+                           android:textColor="#626060"
+                           android:maxLines="1"
+                           android:paddingLeft="15dp"
+                           android:paddingRight="10dp"
+                           android:paddingTop="10dp"
+                           android:paddingBottom="10dp"
+                           android:drawableLeft="@drawable/password_icon"
+                           android:drawableTint="#626060"
+                           android:drawablePadding="10dp"/>
+
+                   </LinearLayout>
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:layout_marginBottom="3dp"
+                       android:gravity="center">
+
+
+                       <ImageView
+                           android:id="@+id/imgeview_terms1_"
+                           android:layout_width="45dp"
+                           android:layout_height="45dp"
+                           android:padding="10dp"
+                           android:scaleType="fitXY" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="12dp"
+                           android:gravity="left"
+                           android:textColor="#000000"
+                           android:text="I confirm that I have read the Privacy Policy and I agree to the website Terms of Use and License Agreement"/>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:layout_marginBottom="5dp"
+                       android:gravity="center">
+
+
+                       <ImageView
+                           android:id="@+id/imgeview_terms2_"
+                           android:layout_width="45dp"
+                           android:layout_height="45dp"
+                           android:padding="10dp"
+                           android:scaleType="fitXY" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="12dp"
+                           android:gravity="left"
+                           android:textColor="#000000"
+                           android:text="I understand that they do not, in any way, replace immigration advice"/>
+                   </LinearLayout>
+
+                   <Button
+                       android:id="@+id/button_regi__"
+                       android:text="Register Now"
+                       android:textColor="@android:color/white"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                       android:background="@drawable/button_shape1"
+                       android:paddingTop="5dp"
+                       android:paddingBottom="5dp"
+                       android:layout_marginTop="15dp" />
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:layout_marginTop="20dp"
+                       android:gravity="center">
+
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:layout_weight="2"
+                           android:orientation="vertical">
+
+                           <View
+                               android:id="@+id/line100"
+                               android:layout_width="wrap_content"
+                               android:layout_height="2dp"
+                               android:background="#626060"/>
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:layout_weight="1"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                               android:gravity="center"
+                               android:textColor="#626060"
+                               android:text="OR" />
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:layout_weight="2"
+                           android:orientation="vertical">
+
+                           <View
+                               android:id="@+id/line1001"
+                               android:layout_width="wrap_content"
+                               android:layout_height="2dp"
+                               android:background="#626060"/>
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                       android:gravity="center"
+                       android:paddingTop="15dp"
+                       android:paddingBottom="15dp"
+                       android:textColor="#626060"
+                       android:text="Already have an account?" />
+
+
+                   <Button
+                       android:id="@+id/button_login_reg"
+                       android:text="Login"
+                       android:textColor="@android:color/white"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textAppearance="?android:attr/textAppearanceMedium"
+                       android:background="@drawable/button_shape"
+                       android:layout_marginBottom="20dp"
+                       android:paddingTop="15dp"
+                       android:paddingBottom="15dp" />
+
+               </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

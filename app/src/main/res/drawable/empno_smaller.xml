@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/employee_no_icon"
+        android:width="@dimen/organisation_screen_left_icon_width_height"
+        android:height="@dimen/organisation_screen_left_icon_width_height">
+    </item>
+</layer-list>

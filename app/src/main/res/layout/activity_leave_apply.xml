@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_leav"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".activity.LeaveApplyActivity">
+
+    <FrameLayout
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/statusbar">
+
+        <ImageView
+            android:id="@+id/imageview_leaveapp_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_white"
+            android:scaleType="fitXY"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="left|center"/>
+
+        <TextView
+            android:id="@+id/textview_leaveapp_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/imageview_leaveapp_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/app"
+            android:scaleType="fitXY"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="right|center"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply for Leave"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:paddingBottom="10dp"
+            android:textColor="#000000"/>
+
+        <Spinner
+            android:id="@+id/spinner_item_leaveapply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:background="@drawable/spinner_border"
+            android:spinnerMode="dropdown" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/black"/>
+
+
+        <TextView
+            android:id="@+id/textview_employee_leav_in_hand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Leave in Hand"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="#626060"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/textview_employee_from_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="From Date"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:drawableRight="@drawable/calander_icon"
+            android:drawableTint="#970842"
+            android:drawablePadding="10dp"
+            android:textColor="#626060"/>
+
+        <View
+            android:id="@+id/line11"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/black"/>
+
+
+        <TextView
+            android:id="@+id/textview_employee_to_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="To Date"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:drawableRight="@drawable/calander_icon"
+            android:drawableTint="#970842"
+            android:drawablePadding="10dp"
+            android:textColor="#626060"/>
+
+        <View
+            android:id="@+id/line110"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/black"/>
+
+
+        <TextView
+            android:id="@+id/textview_employee_no_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="No. of Days"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp" />
+
+        <View
+            android:id="@+id/line100"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/black"/>
+
+
+
+
+        <TextView
+            android:id="@+id/textview_employee_current_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Apply Date"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/black"/>
+
+
+
+        <Button
+            android:id="@+id/button_leaveapply"
+            android:text="Apply for Leave"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
